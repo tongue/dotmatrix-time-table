@@ -1,0 +1,45 @@
+{
+	"name": "dotmatrix-time-table",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"fela": "^6.1.3",
+		"fela-beautifier": "^5.0.15",
+		"fela-combine-arrays": "^1.0.6",
+		"fela-plugin-embedded": "^5.2.4",
+		"fela-plugin-friendly-pseudo-class": "^5.0.15",
+		"fela-plugin-named-media-query": "^5.0.13",
+		"fela-plugin-placeholder-prefixer": "^5.0.16",
+		"fela-plugin-unit": "^5.0.15",
+		"fela-plugin-validator": "^5.0.17",
+		"fela-preset-web": "^8.0.3",
+		"fela-statistics": "^5.0.17",
+		"flow-bin": "^0.64.0",
+		"husky": "^0.14.3",
+		"lint-staged": "^6.1.0",
+		"polished": "^1.9.0",
+		"prettier": "^1.10.2",
+		"prettier-eslint": "^8.8.1",
+		"react": "^16.2.0",
+		"react-dom": "^16.2.0",
+		"react-fela": "^6.2.4",
+		"react-scripts": "1.1.0",
+		"react-styleguidist": "^6.2.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"precommit": "lint-staged",
+		"styleguide": "styleguidist server",
+		"styleguide:build": "styleguidist build",
+		"flow": "flow"
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,json,css}": [
+			"prettier --single-quote --write",
+			"git add"
+		]
+	}
+}
