@@ -26,9 +26,5 @@ export default {
     gunPowder: '#484652',
     black: '#000000',
     fallback: 'hotpink'
-  },
-  sign: {
-    fontSizeRatio: 0.07,
-    borderSizeRatio: 0.003
   }
 };
