@@ -1,29 +1,19 @@
 // @flow
 
 import React from 'react';
+import Wrapper from './../Wrapper';
 import Sign from './../Sign';
-import { createComponent } from 'react-fela';
-
-const Wrapper = createComponent(
-  () => ({
-    display: 'block',
-    width: '100%'
-  }),
-  'div'
-);
+import Text from './../Text';
 
 type State = {
-  width: ?number,
-  height: ?number
+  baseWidth: ?number
 };
 
 class Station extends React.Component<{}, State> {
   wrapper: ?HTMLDivElement = null;
-  ratio: number = 0.1875;
 
   state = {
-    width: null,
-    height: null
+    baseWidth: null
   };
 
   componentDidMount() {
@@ -37,25 +27,25 @@ class Station extends React.Component<{}, State> {
 
   updateDimensions = () => {
     if (this.wrapper) {
-      const width = this.wrapper.clientWidth;
       this.setState({
-        width,
-        height: width * this.ratio
+        baseWidth: parseInt(this.wrapper.clientWidth, 10)
       });
     }
   };
 
   render() {
-    const { width, height } = this.state;
+    const { baseWidth } = this.state;
 
     return (
       <Wrapper innerRef={ref => (this.wrapper = ref)}>
-        {width &&
-          height && (
-            <Sign baseWidth={width} color="#D63633">
+        {baseWidth && (
+          <div>
+            <Sign baseWidth={baseWidth} color="#D63633">
               Östermalmstorg
             </Sign>
-          )}
+            <Text baseWidth={baseWidth}>A</Text>
+          </div>
+        )}
       </Wrapper>
     );
   }

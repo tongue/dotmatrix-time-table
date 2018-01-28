@@ -4,4 +4,4 @@ export const ratioSizePx = (
   fontSize: number,
   currentWidth: number,
   referenceWidth: number = theme.referenceWidth
-) => `${fontSize / referenceWidth * currentWidth}px`;
+) => parseInt(fontSize / referenceWidth * currentWidth, 10);

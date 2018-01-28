@@ -13,7 +13,7 @@ const Sign = createComponent(
     borderColor: theme.color.black,
     paddingTop: ratioSizePx(24, baseWidth),
     paddingBottom: ratioSizePx(12, baseWidth),
-    fontSize: ratioSizePx(48, baseWidth),
+    fontSize: ratioSizePx(36, baseWidth),
     color: theme.color.white,
     margin: 0,
     backgroundImage: `
@@ -32,7 +32,7 @@ const Sign = createComponent(
 );
 
 type Props = {
-  children: any,
+  children: string,
   color: string,
   baseWidth: number
 };
