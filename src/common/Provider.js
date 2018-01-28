@@ -5,7 +5,7 @@ import createRenderer from './createFelaRenderer';
 import createFontRenderer from './createFontRenderer';
 
 // should be from another file. Use this to drive theme config.
-import defaultTheme from './base-ui-theme';
+import defaultTheme from './../theme/defaultTheme';
 
 // Use the below function to customize dev/prod mode plugins
 const felaRenderer = createRenderer();

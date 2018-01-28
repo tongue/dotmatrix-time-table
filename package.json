@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"css-functions": "^1.0.5",
 		"fela": "^6.1.3",
 		"fela-beautifier": "^5.0.15",
 		"fela-combine-arrays": "^1.0.6",
