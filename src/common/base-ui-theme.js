@@ -1,5 +1,3 @@
-import { darken } from 'polished';
-
 const colorOffsetLight = 0.15;
 const colorOffsetDark = 0.07;
 
@@ -93,9 +91,9 @@ export default {
   arrowSize: '5px',
   disabledBackground: '#ededed',
   bodyBackground: '#ebebeb',
-  bodyAccentColor: darken(0.8, '#fff'),
-  bodyOffsetColor: darken(0.53, '#fff'),
-  fontColor: darken(0.8, '#fff'),
+  bodyAccentColor: '#808080',
+  bodyOffsetColor: '#535353',
+  fontColor: '#888888',
   colorWhite: '#fff',
   colorGrey: '#666',
   colorBlack: '#000',

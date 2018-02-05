@@ -1,3 +1,3 @@
 ```js
-<Text baseWidth={640}>Some text</Text>
+<Text baseWidth={640}>QRSTUVWXYZÄÅÖO</Text>
 ```
